@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e2e0e0;
+  position: relative;
+}
+
+table {
+  max-width: 80%;
+  background: #fcfcf9;
+  box-sizing: border-box;
+  text-align: left;
+  margin-top: 10px;
+  border-spacing: 5px;
+}
+tr, td, th {
+  background: #f8f7ee;
+  padding: 5px;
+  min-width: 40px;
+  min-height: 50px;
+}
+tr {
+  cursor: pointer;
+}
+th {
+  text-align: center;
+  background: #f5f3f3;
+}
+th:nth-child(1) {
+  width: 200px;
+}
+th:nth-child(2) {
+  background: #e6ebf5;
+  max-width: 150px;
+}
+
+td:nth-child(2) {
+  background: #e6ebf5;
+}
+
+td:nth-child(3)>p:nth-child(1){
+  text-align: right;
+  min-width: 60px;
+  border: none;
+}
+td:nth-child(3)>p:nth-child(2){
+  text-align: right;
+  margin-right: 10px;
+  min-width: 60px;
+  color: red;
+}
+td:nth-child(n+2) {
+  text-align: right;
+  padding-right: 5%;
+}
+td:nth-child(n+3) {
+  background: #f5f3f3;
+}
+td:nth-child(3) {
+  border-spacing: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+td:nth-child(4) {
+  padding-right: 8%;
+}
+
+
+/* библиотека график */
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 660px;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
